@@ -1,0 +1,96 @@
+/* Colors */
+
+:root{
+	--bs-black: #333;
+	--bs-silver: #8a8a8a;
+	--bs-orange: #ff5800;
+	--bs-darkblue: #257ff9;
+	--bs-lightblue: #009cfe;
+	--bs-bg-gradient: linear-gradient(to left, #009cfe, #257ff9);
+}
+
+/* Core Styles */
+
+.bg-silver {
+	background: #eeee;
+}
+
+/* Welcome Section Styles */
+
+.welcome-section {
+	margin-top: 80px;
+	padding: 15px;
+	text-align: center;
+	background: #f7f7f7;
+	color: var(--bs-silver);
+	font-size: 1.2rem;
+	font-weight: 200;
+	font-style: italic;
+	text-transform: capitalize;
+}
+
+
+/* Intro Section Styles */
+
+.intro-section {
+	padding-top: 40px;
+	text-align: center;
+}
+
+.intro-section p {
+	padding-left: 20%;
+	color: var(--bs-black);
+	font-size: 1.2rem;
+	width: 60%;
+}
+
+.intro-section__img img {
+	width: 300px;
+}
+
+
+/* Benefits Section */
+
+.benefits-section {
+	padding-top: 80px;
+}
+
+.benefits-section__item {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.benefits-section__item .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.benefits-section__item-info {
+	width: 50%;
+}
+
+.benefits-section__item-info h3 {
+	font-size: 1.3rem;
+	color: var(--bs-black);
+}
+
+.benefits-section__item-info ul {
+	width: 80%;
+	font-size: 0.95rem;
+	color: var(--bs-silver);
+	line-height: 1.3rem;
+}
+
+.benefits-section__item-info li {
+	padding-top: 10px;
+}
+
+
+.benefits-section__item-img {
+	width: 50%;
+}
+
+.benefits-section__item-img img {
+	width: 80%;
+}

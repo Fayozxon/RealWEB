@@ -1,0 +1,113 @@
+
+
+/* Colors */
+
+:root{
+	--bs-black: #333;
+	--bs-silver: #8a8a8a;
+	--bs-orange: #ff5800;
+	--bs-darkblue: #257ff9;
+	--bs-lightblue: #009cfe;
+	--bs-bg-gradient: linear-gradient(to left, #009cfe, #257ff9);
+}
+
+
+/* Welcome Section Styles */
+
+.welcome-section {
+	margin-top: 80px;
+	padding: 15px;
+	text-align: center;
+	background: #f7f7f7;
+	color: var(--bs-silver);
+	font-size: 1.2rem;
+	font-weight: 200;
+	font-style: italic;
+	text-transform: capitalize;
+}
+
+
+/* Info Section Styles */
+
+.info-section {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.info-section h3,
+.info-section a {
+	color: var(--bs-black);
+	font-size: 1.4rem;
+	text-decoration: none;
+	transition: 0.3s;
+}
+.info-section h3:hover,
+.info-section a:hover {
+	color: var(--bs-silver);
+}
+
+
+/* Contact Section Styles */
+
+.contact-section {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.contact-form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.contact-form input {
+	width: 300px;
+	height: 40px;
+	margin: 10px;
+	outline: none;
+}
+
+.contact-form textarea {
+	margin-top: 20px;
+	width: 630px;
+	height: 70px;
+	outline: none;
+}
+
+.contact-form input,
+.contact-form textarea {
+	padding: 5px;
+	padding-left: 5px;
+	border: 2px solid var(--bs-darkblue);
+	font-size: 1.2rem;
+	font-family: Montserrat;
+	caret-color:  var(--bs-darkblue);
+	transition: 0.5s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+	border-color: var(--bs-lightblue);
+	box-shadow: 0 5px 15px 0 #009cfe30;
+}
+
+.contact-form__buttons {
+	width: 630px;
+	padding-top: 50px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+/*
+
+Shirinov Fayozxon 2006
+2021 | Copyright
+
+*/

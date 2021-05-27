@@ -1,0 +1,283 @@
+/* Colors */
+
+:root{
+	--bs-black: #333;
+	--bs-silver: #8a8a8a;
+	--bs-orange: #ff5800;
+	--bs-darkblue: #257ff9;
+	--bs-lightblue: #009cfe;
+	--bs-bg-gradient: linear-gradient(to left, #009cfe, #257ff9);
+}
+
+/* Core Styles */
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Montserrat', 'Segoe UI', 'MS Sans Serif', sans-serif;
+	margin: 0;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+a.disabled {
+	cursor: not-allowed;
+}
+
+
+.plus-button {
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	padding: 8px;
+	width: 50px;
+	height: 50px;
+	border: none;
+	border-radius: 50%;
+	font-size: 2rem;
+	color: #fff;
+	background: var(--bs-orange);
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+	cursor: pointer;
+	transition: 0.5s;
+}
+.plus-button__animation {
+	animation: plus-button 4s ease infinite;
+	animation-delay: 0s;
+}
+.plus-button i {
+	transition: 0.5s;
+}
+.plus-button:hover {
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.35);
+}
+
+.plus-button__item {
+	position: fixed;
+	bottom: 130px;
+	right: 150px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: var(--bs-orange);
+	text-align: center;
+	line-height: 30px;
+	font-size: 1.2rem;
+	color: #fff;
+	display: none;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+.plus-button__item:nth-child(2) {
+	bottom: 160px;
+	right: 90px;
+}
+.plus-button__item:nth-child(3) {
+	bottom: 60px;
+	right: 160px;
+}
+
+.button {
+	width: 12em;
+	font-size: 1.2rem;
+	color: #fff;
+	letter-spacing: 1px;
+	padding: 10px 30px;
+	border: none;
+	border-radius: 40px;
+	background: var(--bs-bg-gradient);
+	cursor: pointer;
+	transition: 0.5s;
+	box-shadow: 0 9px 25px 0 #009cfe65;
+}
+.button:hover {
+	width: 12.5em;
+	box-shadow: none;
+}
+.button i {
+	margin-left: 15px;
+	color: transparent;
+	transition: 0.5s;
+}
+.button:hover i {
+	margin-left: 20px;
+	color: #fff;
+}
+
+/* Main Header Styles */
+
+.main-header {
+	position: fixed;
+	top: 20px;
+	left: 0;
+	width: 100%;
+	background: #ffffffdd;
+	transition: 0.5s;
+	backdrop-filter: blur(2px);
+	z-index: 10;
+}
+
+.main-header .container {
+	width: 95%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.main-header__logo img {
+	width: 120px;
+}
+
+
+
+/* Main Navigation Styles */
+
+
+.main-nav__items li {
+	display: inline-block;
+	padding-right: 20px;
+}
+.main-nav__items li:last-child {
+	width: 15em;
+}
+
+.main-nav__items a {
+	color: var(--bs-black);
+	text-decoration: none;
+	font-size: 1.1rem;
+	padding-bottom: 5px;
+	border-bottom: 3px solid transparent;
+	transition: 0.6s;
+}
+.main-nav__items a:hover {
+	color: var(--bs-orange);
+	border-bottom-color: var(--bs-orange);
+}
+.main-nav__items a.active {
+	color: var(--bs-orange);
+	border-bottom-color: var(--bs-orange);
+}
+
+.main-nav__items .phone {
+	font-weight: bolder;
+	transition: 0.2s;
+}
+.main-nav__items .phone:hover {
+	color: var(--bs-orange);
+}
+
+.main-nav__items .phone i {
+	color: var(--bs-orange);
+}
+
+.main-nav__action {
+	box-shadow: 0 0 15px 0 #009cfe65;
+}
+
+
+.main-nav__portfolio-link {
+	position: relative;
+}
+
+.main-nav__portfolio-link:hover div {
+	display: block;
+	opacity: 1;
+}
+
+.main-nav__portfolio-overlay {
+	position: absolute;
+	top: 25px;
+	left: 0;
+	padding: 20px;
+	background: #ffffffdd;
+	box-shadow: 0 0 15px 0 #00000020;
+	transition: 0.6s;
+	opacity: 0;
+	display: none;
+}
+
+.main-nav__portfolio-overlay ul {
+	padding-left: 0;
+}
+
+.main-nav__portfolio-overlay li {
+	padding-top: 20px;
+	display: block;
+}
+
+
+/* Footer Styles */
+
+.footer {
+	margin-top: 100px;
+	padding-top: 60px;
+	text-align: center;
+	color: #fff;
+	background: var(--bs-lightblue);
+}
+
+.footer > .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer h2 {
+	font-size: 2.1rem;
+}
+
+.footer p {
+	width: 60%;
+}
+
+.footer a {
+	font-size: 1.2rem;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+}
+.footer a:hover {
+	text-decoration: underline;
+}
+
+.footer-in {
+	margin-top: 50px;
+	width: 100%;
+	text-align: left;
+	background: var(--bs-darkblue);
+}
+
+.footer-in .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+}
+
+.footer-in a {
+	padding:  4px;
+	font-size: 1.4rem;
+	transition: 0.5s;
+}
+.footer-in a:hover {
+	text-decoration: none;
+	color: var(--bs-lightblue);
+}
+
+.footer-in a:last-child {
+	margin-left: 30px;
+}
+
+
+/*
+
+Shirinov Fayozxon 2006
+2021 | Copyright
+
+*/
