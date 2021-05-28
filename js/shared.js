@@ -31,8 +31,11 @@ function plusButtonFun() {
 
 		appearance = 0;
 	};
+
 };
 
+
+plusButton.addEventListener('click', plusButtonFun)
 
 /* Header Scripts */
 
@@ -42,6 +45,14 @@ document.addEventListener('scroll', function(evt){
 	header.style.cssText = 'top: 0; box-shadow: 0 0 16px 0 #00000026;';
 });
 
+
+/* Body Scripts */
+
+const navContactLink = document.querySelector('.main-nav__action');
+
+navContactLink.addEventListener('click', function() {
+	window.location = 'contact.html';
+});
 
 
 /*

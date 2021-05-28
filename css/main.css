@@ -1,4 +1,4 @@
-/* Colors */
+ /* Colors */
 
 :root{
 	--bs-black: #333;
@@ -131,6 +131,7 @@
 	position: absolute;
 	bottom: -110px;
 	left: 0;
+	z-index: -3s;
 }
 
 .info-section > h1 {
@@ -367,7 +368,7 @@
 
 .portfolio-section__items {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
 	padding-bottom: 40px;
@@ -375,7 +376,7 @@
 
 .portfolio-section__item {
 	padding-top: 40px;
-	width: 25%;
+	width: 250px;
 	margin-right: 3%;
 	display: flex;
 	flex-direction: column;
@@ -444,6 +445,63 @@
 	width: 180px;
 	padding-top: 50px;
 }
+
+
+/* RWD Styles */
+
+@media only screen and (max-width: 991px) {
+	
+	/* Main Section Styles */
+
+	.main-section .container {
+		flex-direction: column;
+	}
+
+	.main-section__info,
+	.main-section__img {
+		width: 90%;
+	}
+
+	/* Info Section Styles */
+
+	.info-section__cards {
+		flex-direction: column;
+	}
+
+	.info-section__card {
+		border: none;
+		width: 80%;
+	}
+
+	/* About Section Styles */
+
+	.about-section {
+		flex-direction: column;
+	}
+
+	.about-section__info,
+	.about-section__img {
+		width: 90%;
+	}
+
+	/* Statistics Section Styles */
+
+	.statistics-section_items {
+		flex-direction: column;
+		width: 60%;
+	}
+
+	/* Help Section Styles */
+
+	.help-section__cards {
+		flex-direction: column;
+	}
+
+	.help-section__card {
+		margin-top: 30px;
+	}
+}
+
 
 /*
 

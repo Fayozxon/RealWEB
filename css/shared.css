@@ -46,6 +46,7 @@ a.disabled {
 	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 	cursor: pointer;
 	transition: 0.5s;
+	z-index: 5;
 }
 .plus-button__animation {
 	animation: plus-button 4s ease infinite;
@@ -72,6 +73,7 @@ a.disabled {
 	color: #fff;
 	display: none;
 	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+	z-index: 5;
 }
 .plus-button__item:nth-child(2) {
 	bottom: 160px;
@@ -273,6 +275,27 @@ a.disabled {
 .footer-in a:last-child {
 	margin-left: 30px;
 }
+
+/* RWD Styles */
+
+@media only screen and (max-width: 991px) {
+	
+	/* Main Header Styles */
+
+	.main-header {
+		height: 70px;
+	}
+
+	.main-header__logo img {
+		padding-top: 30px;
+	}
+
+	.main-nav__items {
+		display: none;
+	}
+
+}
+
 
 
 /*
