@@ -1,4 +1,3 @@
-
 /* Body Scripts */
 
 const portfolioLink = document.getElementById('portfolioLink');
@@ -20,10 +19,3 @@ contactLink.addEventListener('click', function() {
 	window.location = 'contact.html';
 });
 
-
-/*
-
-Shirinov Fayozxon 2006
-2021 | Copyright
-
-*/
