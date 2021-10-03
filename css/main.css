@@ -50,6 +50,7 @@
 	top: 100px;
 	left: -55px;
 	z-index: -3;
+	pointer-events: none;
 }
 
 .main-section .container {
@@ -132,6 +133,7 @@
 	bottom: -110px;
 	left: 0;
 	z-index: -3s;
+	pointer-events: none;
 }
 
 .info-section > h1 {
@@ -237,6 +239,7 @@
 	right: 0;
 	bottom: -180px;
 	z-index: -3;
+	pointer-events: none;
 }
 
 .statistics-section .container {
@@ -444,6 +447,7 @@
 .partners-section__item img {
 	width: 180px;
 	padding-top: 50px;
+	filter: invert(1);
 }
 
 
@@ -471,6 +475,7 @@
 	.info-section__card {
 		border: none;
 		width: 80%;
+		margin: 0;
 	}
 
 	/* About Section Styles */
@@ -488,7 +493,7 @@
 
 	.statistics-section_items {
 		flex-direction: column;
-		width: 60%;
+		width: 70%;
 	}
 
 	/* Help Section Styles */
@@ -498,14 +503,7 @@
 	}
 
 	.help-section__card {
-		margin-top: 30px;
+		margin: 30px 5px;
 	}
 }
 
-
-/*
-
-Shirinov Fayozxon 2006
-2021 | Copyright
-
-*/
